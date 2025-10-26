@@ -14,10 +14,8 @@ import java.util.ArrayList;
 
 public class CustomListTest {
 
-    private Context mockContext;
-
     private CustomList mockList() {
-        return new CustomList(mockContext, new ArrayList<City>());
+        return new CustomList(null, new ArrayList<City>());
     }
 
     @Test
