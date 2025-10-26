@@ -55,7 +55,8 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public void removeCity(City city) {
-
+        this.cities.remove(city);
+        notifyDataSetChanged();
     }
 
 }
