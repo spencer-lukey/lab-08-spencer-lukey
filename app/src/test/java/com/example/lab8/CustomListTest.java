@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 
 public class CustomListTest {
+
     private Context mockContext;
 
     private CustomList mockList() {
@@ -28,7 +29,7 @@ public class CustomListTest {
         assertEquals(0, customList.getCount());
 
         // Add new item
-        customList.add(new City("New York", "NY"));
+        customList.addCity(new City("New York", "NY"));
 
         // Check item was added
         assertEquals(1, customList.getCount());

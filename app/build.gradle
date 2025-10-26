@@ -28,8 +28,11 @@ android {
     }
 
     testOptions {
-        unitTests.all{
-            useJUnitPlatform()
+        unitTests {
+            returnDefaultValues = true
+            all{
+                useJUnitPlatform()
+            }
         }
     }
 }
