@@ -35,4 +35,22 @@ public class CustomListTest {
         assertEquals(1, customList.getCount());
     }
 
+    @Test
+    public void testCustomListRemove() {
+        // Create new CustomList
+        CustomList customList = mockList();
+
+        // Add item to list
+        City city = new City("New York", "NY");
+        customList.addCity(city);
+
+        // Remove item
+        customList.removeCity(city);
+
+        // Check item was removed
+        assertEquals(0, customList.getCount());
+
+    }
+
+
 }
