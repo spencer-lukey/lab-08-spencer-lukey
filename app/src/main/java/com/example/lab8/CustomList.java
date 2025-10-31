@@ -59,4 +59,8 @@ public class CustomList extends ArrayAdapter<City> {
         notifyDataSetChanged();
     }
 
+
+    public boolean hasCity(City city) {
+        return cities.contains(city);
+    }
 }
